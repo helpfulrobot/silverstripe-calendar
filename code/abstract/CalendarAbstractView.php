@@ -102,7 +102,6 @@ abstract class CalendarAbstractView extends ViewableData {
 	function showCalendar(Calendar $calendar) {
 		$calendars = $this->Calendars($calendar);
 		$templates = $this->getTemplates();
-		die("boo");
 		Requirements::javascript(SAPPHIRE_DIR .'/thirdparty/jquery/jquery.js');
 		Requirements::javascript('calendar/javascript/Calendar.js');
 		return $this->customise(array('ID' => $calendar->ID(), 'ContainerClass' => $this->containerClass, 'Calendars' => $calendars))->renderWith($templates);
