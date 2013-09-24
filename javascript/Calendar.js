@@ -15,7 +15,6 @@ var Calendar = {
 	calenderHolderID: "",
 
 	init: function(){
-		alert("go");
 		var prev = jQuery(this.navigationbarID+".previous.ajaxified a");
 		var previousLink  = jQuery(prev).attr("rel");
 		jQuery(prev).attr("href", previousLink);
