@@ -11,10 +11,14 @@ jQuery(document).ready(
 var Calendar = {
 
 	init: function(){
+		alert("go");
 		var prev = jQuery("#NavigationBarID .previous a");
-		jQuery(prev).attr("href", jQuery(prev).attr("rel"));
+		var previousLink  = jQuery(prev).attr("rel");
+		jQuery(prev).attr("href", previousLink);
 		var next = jQuery("#NavigationBarID .next a");
-		jQuery(next).attr("href", jQuery(next).attr("rel"));
+		var nextLink = jQuery(next).attr("rel");
+		alert(nextLink);
+		jQuery(next).attr("href", nextLink);
 	}
 
 }
