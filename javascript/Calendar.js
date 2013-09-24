@@ -16,7 +16,7 @@ var Calendar = {
 		var previousLink  = jQuery(prev).attr("rel");
 		jQuery(prev).attr("href", previousLink);
 		var next = jQuery("#NavigationBarID .next a");
-		var nextLink = jQuery(next).attr("rel");
+		var nextLink = next.attr("rel");
 		alert(nextLink);
 		jQuery(next).attr("href", nextLink);
 	}
